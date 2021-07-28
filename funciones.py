@@ -4,7 +4,10 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
 from selenium import webdriver
 
-
+"""
+La función selector gestiona las busquedas en la web y diferentes posibilidades de buscadores de elementos de Selenium.
+Junto con diferentes funciones. Ej: hacer click, escribir, borrar. 
+"""
 def selector(chrome, selector, elemento, uso, palabras=""):
     espera = WebDriverWait(chrome, 15)
     a = None
