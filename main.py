@@ -12,7 +12,7 @@ class SearchCase(unittest.TestCase):
 
     def setUp(self):
         self.driver = webdriver.Chrome("chromedriver.exe")
-    """
+
     def test_PopUp(self):
         ### Verifica el texto que figura en el Pop Up sea el correcto y valida la alerta.
         driver = self.driver
@@ -24,7 +24,7 @@ class SearchCase(unittest.TestCase):
         alert.accept()
         time.sleep(2)
         self.assertEqual(text, "Hello World!")
-    """
+
     def test_CompletarCampos_Validacion(self):
         ### Modifica el texto por default y valida que se procese correctamente.
         driver = self.driver
